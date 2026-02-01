@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal File Opener - Matrix Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="UNIVERSAL FILE OPENER">UNIVERSAL FILE OPENER</h1>
+        </header>
+
+        <main>
+            <section class="instructions">
+                <h2>How to Open Files</h2>
+                <div class="instruction-box">
+                    <ol>
+                        <li>Choose the app from your file application</li>
+                        <li>Select "Open With"</li>
+                        <li>Choose this application</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="help-section">
+                <button id="help-button" class="matrix-button">
+                    <span>?</span> HELP - View All File Extensions
+                </button>
+                
+                <div id="help-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Supported & Unsupported File Extensions</h2>
+                        <div class="extensions-container" id="extensions-list">
+                            <!-- File extensions will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="developer-info">
+                <p>Developer: <span class="developer-name">baDr-otaiBi</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
