@@ -177,14 +177,10 @@ const fileExtensions = {
     // Adobe - Not supported yet
     'PSD': { supported: false, category: 'Adobe' },
     'INDD': { supported: false, category: 'Adobe' },
-    'AEP': { supported: false, category: 'Adobe' },
-    'PRPROJ': { supported: false, category: 'Adobe' },
     
     // System Files - Not supported yet
     'DLL': { supported: false, category: 'System Files' },
     'SYS': { supported: false, category: 'System Files' },
-    'INI': { supported: false, category: 'System Files' },
-    'CFG': { supported: false, category: 'System Files' },
     'LOG': { supported: false, category: 'System Files' },
     'TMP': { supported: false, category: 'System Files' },
     'BAK': { supported: false, category: 'System Files' },
@@ -270,9 +266,7 @@ const fileExtensions = {
     'SHP': { supported: false, category: 'GIS' },
     
     // Other Common - Not supported yet
-    'BIN': { supported: false, category: 'Other' },
     'DAT': { supported: false, category: 'Other' },
-    'CFG': { supported: false, category: 'Other' },
     'PROPERTIES': { supported: false, category: 'Other' },
     'CLASS': { supported: false, category: 'Other' },
     'O': { supported: false, category: 'Other' },
@@ -295,7 +289,7 @@ span.onclick = function() {
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
         modal.style.display = 'none';
     }
 }
